@@ -8,11 +8,11 @@
         <version>3.1.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>br.com.mobitbrasil</groupId>
+    <groupId>br.com.vicentetorres</groupId>
     <artifactId>spring-soap-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>wsdl-patos</name>
-    <description>wsdl-patos</description>
+    <name>>spring-soap-server</name>
+    <description>>spring-soap-server</description>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -37,11 +37,6 @@
             <groupId>wsdl4j</groupId>
             <artifactId>wsdl4j</artifactId>
             <version>1.6.3</version>
-        </dependency>
-        <dependency>
-            <groupId>jakarta.xml.soap</groupId>
-            <artifactId>jakarta.xml.soap-api</artifactId>
-            <version>3.0.0</version>
         </dependency>
     </dependencies>
 

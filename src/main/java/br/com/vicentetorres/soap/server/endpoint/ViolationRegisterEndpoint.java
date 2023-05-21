@@ -10,8 +10,6 @@ import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
-import javax.xml.namespace.QName;
-
 @Endpoint
 public class ViolationRegisterEndpoint {
 
@@ -26,8 +24,7 @@ public class ViolationRegisterEndpoint {
 
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "RegisterRequest")
     @ResponsePayload
-    public JAXBElement<Response> processRequest(@RequestPayload JAXBElement<Request> request) {
-        return new JAXBElement<>(new QName(Response.class.getSimpleName()), Response.class, new Response());
-//        return  violationRegisterService.processRequest(request.getValue());
+    public Response processRequest(@RequestPayload JAXBElement<Request> request) {
+        return  violationRegisterService.processRequest(request.getValue());
     }
 }
